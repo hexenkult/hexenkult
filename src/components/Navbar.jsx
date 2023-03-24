@@ -5,7 +5,7 @@ import { Button, Text, Navbar, Link } from '@nextui-org/react';
 function mNavbar() {
 	return (
 		<div className={styles.parent}>
-			<Navbar isBordered className={styles.container} variant={'sticky'}>
+			<Navbar isBordered className={styles.container} variant={'flat'}>
 				<Navbar.Brand>
 					<img src="/logo.png" alt="hexenkult logo" />
 				</Navbar.Brand>

@@ -19,6 +19,8 @@ function Pricing() {
 						<Grid md={10} xs={6}>
 							<Col>
 								<Card
+									variant="flat"
+									isHoverable
 									planName="Basic"
 									value="$7.99"
 									bgColor="#0F0F0F"
@@ -33,6 +35,8 @@ function Pricing() {
 
 							<Col>
 								<Card
+									variant="flat"
+									isHoverable
 									planName="Startup"
 									value="$14.99"
 									bgColor="#0F0F0F"
@@ -48,6 +52,8 @@ function Pricing() {
 
 							<Col>
 								<Card
+									variant="flat"
+									isHoverable
 									planName="Enterprise"
 									value="$25.99"
 									bgColor="#0F0F0F"

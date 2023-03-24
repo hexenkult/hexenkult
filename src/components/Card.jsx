@@ -42,6 +42,8 @@ function mCard(props) {
 				</Card.Body>
 				<div className={styles.btn}>
 					<Button
+						variant="flat"
+						isHoverable
 						css={{
 							background: `${props.buttonColor}`,
 							color: `${props.textColor}`,
