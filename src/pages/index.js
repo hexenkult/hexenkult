@@ -8,7 +8,7 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Home</title>
-				<link rel="icon" type="image/svg+xml+png" href="/Soul Society.png" />
+				<link rel="icon" type="image/svg+xml+png" href="/logo.png" />
 			</Head>
 		</>
 	);
