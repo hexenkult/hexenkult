@@ -1,37 +1,21 @@
-
 .container {
-    display: inline-flex;
-    width: 95%;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid white;
-    margin-left: 50px;
-    margin-right: 40px;
-  
-    
+	display: flex;
+	height: 100px;
+	justify-content: space-between;
+	align-items: center;
+	width: 1400px;
+}
+.parent {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .lista {
-    margin-left: 300px;
 }
-
 
 .logo {
-    align-content: baseline;
-    display: inline;
+	display: flex;
+	position: relative;
+	justify-content: flex-start;
 }
-
-
-
-.navbar li {
-   list-style-type: none;
-   display: inline;
-   padding: 40px;
-
-}
-
-.login {
-    margin-left: 400px;
-}
-
