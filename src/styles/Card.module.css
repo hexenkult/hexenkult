@@ -6,16 +6,28 @@
 	padding-bottom: 32px;
 }
 
-.btn {
-}
-
-.container {
-	border: 1px solid red;
-	padding-left: 150px;
-	height: 650px;
-}
-
 .cardText {
 	display: flex;
 	align-items: center;
+}
+
+.span {
+	font-weight: lighter;
+	font-size: 18px;
+}
+
+.list {
+	padding-top: 25px;
+}
+
+.text {
+	padding-bottom: 15px;
+}
+
+.btn {
+	position: relative;
+	top: -35px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 }

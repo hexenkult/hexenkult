@@ -1,50 +1,59 @@
 import React from 'react';
 import styles from '../styles/Card.module.css';
-import { Card, Grid, Text, Row } from '@nextui-org/react';
-import Button from './Button';
+import { Card, Text, Row, css, Button, Checkbox } from '@nextui-org/react';
 
 function mCard(props) {
-	const list = [
-		{
-			title: 'Orange',
-			img: '/images/fruit-1.jpeg',
-			price: '$5.50',
-		},
-		{
-			title: 'Tangerine',
-			img: '/images/fruit-2.jpeg',
-			price: '$3.00',
-		},
-		{
-			title: 'Cherry',
-			img: '/images/fruit-3.jpeg',
-			price: '$10.00',
-		},
-	];
-
 	return (
 		<>
-			<Grid.Container gap={2}>
-				<Grid sm={12} md={5}>
-					<Card css={{ mw: '330px' }}>
-						<Card.Header>
-							<Text b>{props.planName}</Text>
-						</Card.Header>
-						<Card.Body css={{ py: '$10' }}>
-							<Text justify="">
-								Some quick example text to build on the card title and make up
-								the bulk of the card's content.
-							</Text>
-						</Card.Body>
+			<Card
+				css={{
+					background: `${props.bgColor}`,
+					border: `${props.border}`,
+					mw: '390px',
+					height: '400px',
+					mh: '450px',
+					width: '266px',
+				}}
+			>
+				<Card.Header>
+					<Text b size="$md">
+						{props.planName}
+					</Text>
+				</Card.Header>
 
-						<Card.Footer>
-							<Row justify="center">
-								<Button btnTitle="Get Started" />
-							</Row>
-						</Card.Footer>
-					</Card>
-				</Grid>
-			</Grid.Container>
+				<Card.Body css={{ py: '$10' }}>
+					<Text b justify="flex-start" size="$3xl" css={{ marginTop: '-30px' }}>
+						{props.value} <span className={styles.span}>/ month</span>
+					</Text>
+					<Card.Divider css={{ bgColor: 'white', marginTop: '10px' }} />
+					<div>
+						<Checkbox.Group color="secondary" className={styles.list}>
+							<Checkbox value="buenos-aires" className={styles.text}>
+								<Text size="$md">{props.option1}</Text>
+							</Checkbox>
+							<Checkbox value="sydney" className={styles.text}>
+								<Text size="$md">{props.option2}</Text>
+							</Checkbox>
+							<Checkbox value="london" className={styles.text}>
+								<Text size="$md">{props.option3}</Text>
+							</Checkbox>
+						</Checkbox.Group>
+					</div>
+				</Card.Body>
+				<div className={styles.btn}>
+					<Button
+						css={{
+							background: `${props.buttonColor}`,
+							color: `${props.textColor}`,
+							width: '158px',
+							height: '50px',
+							border: `${props.buttonBorder}`,
+						}}
+					>
+						Get Started
+					</Button>
+				</div>
+			</Card>
 		</>
 	);
 }
