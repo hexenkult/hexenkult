@@ -1,6 +1,6 @@
 
 .container{
-    display: flex;
+    display: inline-flex;
     width: 100%;
     height: 100px;
     justify-content: center;
@@ -9,10 +9,19 @@
     
 }
 
+.lista{
+    margin-left: 300px;
+}
+
+
 .navbar li {
    list-style-type: none;
    display: inline;
    padding: 40px;
 
+}
+
+.login{
+    margin-left: 400px;
 }
 
