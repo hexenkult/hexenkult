@@ -1,0 +1,20 @@
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.btns {
+	position: relative;
+	left: -2%;
+	padding-top: 58px;
+	display: flex;
+	flex-direction: row;
+}
+
+.saves {
+	padding-top: 0%;
+	position: relative;
+	left: 1%;
+}
