@@ -1,17 +1,27 @@
 
-.container{
+.container {
     display: inline-flex;
-    width: 100%;
+    width: 95%;
     height: 100px;
     justify-content: center;
     align-items: center;
-    border: 1px solid red;
+    border-bottom: 1px solid white;
+    margin-left: 50px;
+    margin-right: 40px;
+  
     
 }
 
-.lista{
+.lista {
     margin-left: 300px;
 }
+
+
+.logo {
+    align-content: baseline;
+    display: inline;
+}
+
 
 
 .navbar li {
@@ -21,7 +31,7 @@
 
 }
 
-.login{
+.login {
     margin-left: 400px;
 }
 
