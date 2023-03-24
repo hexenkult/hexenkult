@@ -1,11 +1,22 @@
 import styles from '../styles/Button.module.css';
 import React from 'react';
-import { Button } from '@nextui-org/react';
-function mButton() {
+import { Button, css } from '@nextui-org/react';
+
+function mButton(props) {
 	return (
-		<div>
-			<Button>Get Started</Button>
-		</div>
+		<>
+			<Button
+				css={{
+					background: 'white',
+					color: 'black',
+					width: '158px',
+					height: '55px',
+					borderRadius: '8px',
+				}}
+			>
+				{props.btnTitle}
+			</Button>
+		</>
 	);
 }
 
