@@ -1,7 +1,13 @@
+import styles from '../styles/Button.module.css';
 import React from 'react';
+import { Button } from '@nextui-org/react';
 
-function Button() {
-	return <div>Button</div>;
+function mButton() {
+	return (
+		<div>
+			<Button>Get Started</Button>
+		</div>
+	);
 }
 
-export default Button;
+export default mButton;

@@ -7,6 +7,7 @@ function payment() {
 			<Navbar />
 			<Header />
 			<Card />
+			<Button />
 		</div>
 	);
 }
