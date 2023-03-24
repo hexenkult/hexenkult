@@ -14,7 +14,6 @@ function mNavbar() {
 					<Navbar.Link isActive activeColor={'secondary'} href="#">
 						Pricing
 					</Navbar.Link>
-					<Navbar.Link href="#">Pricing</Navbar.Link>
 					<Navbar.Link href="#">Blog</Navbar.Link>
 					<Navbar.Link href="#">About Us</Navbar.Link>
 				</Navbar.Content>
