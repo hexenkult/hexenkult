@@ -1,4 +1,4 @@
-import { Button, Card, Header, Navbar } from '../components';
+import { Card, Header, Navbar } from '../components';
 import React from 'react';
 
 function payment() {
@@ -6,8 +6,7 @@ function payment() {
 		<div>
 			<Navbar />
 			<Header />
-			<Card />
-			<Button />
+			<Card planName="Startup" />
 		</div>
 	);
 }
