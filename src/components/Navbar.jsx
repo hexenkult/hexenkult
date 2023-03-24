@@ -25,15 +25,15 @@ function mNavbar() {
 					<Navbar.Item>
 						<Button
 							auto
-							flat
+							variant="flat"
 							as={Link}
 							href="#"
 							css={{
-								background: 'white',
-								color: 'black',
+								background: '#FFF',
+								color: '#000',
 								width: '158px',
 								height: '45px',
-								border: '4px solid white',
+								border: '4px solid #FFF',
 							}}
 						>
 							Get Free Access
