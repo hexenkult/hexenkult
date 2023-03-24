@@ -1,12 +1,21 @@
 import '@/styles/globals.css';
-import { ChakraProvider } from '@chakra-ui/react'
+import { NextUIProvider, createTheme } from '@nextui-org/react';
 
-function App({ Component, pageProps }) {
-  return (
-    <ChakraProvider>
-      <Component {...pageProps} />
-    </ChakraProvider>
-  )
+const theme = createTheme({
+	type: 'dark', // it could be "light" or "dark"
+	theme: {
+		colors: {
+			primary: '#FFF',
+			secondary: '#F9CB80',
+			error: '#FCC5D8',
+		},
+	},
+});
+
+export default function App({ Component, pageProps }) {
+	return (
+		<NextUIProvider>
+			<Component {...pageProps} />
+		</NextUIProvider>
+	);
 }
-
-export default App
